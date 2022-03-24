@@ -1,16 +1,9 @@
-body{
-    /* background: url('../img/admin-signup/brg.jpg');
-    background-size: cover;
-    background-position-y: 100x; */
-    /* font-size: 16px; */
-    background-color: #ecf0f3;
-}
 #wrapper{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ecf0f3;
+    /* background-color: #ecf0f3; */
 }
 #form-login{
     max-width: 400px;
@@ -21,18 +14,18 @@ body{
 }
 .form-heading{
     font-size: 25px;
-    color: #f5f5f5;
+    color: #000000;
     text-align: center;
     margin-bottom: 30px;
 }
 .form-group{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     margin-top: 15px;
     margin-bottom: 20px;
     display: flex;
 }
 .form-group i{
-    color: #fff;
+    color: #000000;
     font-size: 14px;
     padding-top: 5px;
     padding-right: 10px;
@@ -41,11 +34,11 @@ body{
     background: transparent;
     border: 0;
     outline: 0;
-    color: #f5f5f5;
+    color: #000000;
     flex-grow: 1;
 }
 .form-input::placeholder{
-    color: #f5f5f5;
+    color:#000000;
 }
 #eye i{
     padding-right: 0;
@@ -54,13 +47,14 @@ body{
 
 .form-submit{
     background: transparent;
-    border: 1px solid #f5f5f5;
-    color: #fff;
+    border: 1px solid #000000;
+    color: #000000;
     width: 100%;
     text-transform: uppercase;
     padding: 6px 10px;
     transition: 0.25s ease-in-out;
     margin-top: 30px;
+    background-color: #868686;
 }
 .form-submit:hover{
     border: 1px solid #54a0ff;
