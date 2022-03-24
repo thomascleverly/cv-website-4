@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+body{
+    /* background: url('../img/admin-signup/brg.jpg');
+    background-size: cover;
+    background-position-y: 100x; */
+    /* font-size: 16px; */
+    /* background-color: #ecf0f3; */
+}
+>>>>>>> 01c44db53da9e59306b8bb29344fe71626896403
 #wrapper{
     min-height: 100vh;
     display: flex;
