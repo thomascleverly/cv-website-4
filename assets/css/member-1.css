@@ -145,14 +145,14 @@ html {
     font-weight: 550;
 }
 
-.avatar {
+/* .avatar {
     vertical-align: middle;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     padding-right: 0 20px;
     margin-right: 10px;
-}
+} */
 
 .members{
     text-decoration: none;
