@@ -11,21 +11,24 @@
 </head>
 <body>
     <div id="wrapper" >
-        <form action="" id="form-login">
+        <div id="form-login">
             <h1 class="form-heading">Form đăng nhập</h1>
             <div class="form-group">
                 <i class="far fa-user"></i>
-                <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                <input type="text" class="form-input"  placeholder="Tên đăng nhập" id="userName">
+
             </div>
             <div class="form-group">
                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Mật khẩu">
+                <input type="password" class="form-input"  placeholder="Mật khẩu" id="passWord">
                 <div id="eye">
                     <i class="far fa-eye"></i>
                 </div>
             </div>
-            <input type="submit" value="Đăng nhập" class="form-submit">
-        </form>
+            <span class="form-message" id="not_found_account"></span>
+            <span class="form-message" id="text_when_empty"></span>
+            <button class="form-submit"   onclick="handleSubmit()">Đăng nhập</button>
+        </div>
     </div>
     
 </body>
