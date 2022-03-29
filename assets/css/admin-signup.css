@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #ecf0f3; */
+    background-color: #ecf0f3;
 }
 #form-login{
     max-width: 400px;
