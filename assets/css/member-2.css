@@ -134,7 +134,6 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    /* box-shadow: var(--shadow-white-3); */
     z-index: 1;
 }
 
@@ -146,14 +145,14 @@ html {
     font-weight: 550;
 }
 
-/* .avatar {
+.avatar {
     vertical-align: middle;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     padding-right: 0 20px;
     margin-right: 10px;
-} */
+}
 
 .members{
     text-decoration: none;
@@ -227,6 +226,512 @@ html {
     transition: 0.8s;
     transform: translateY(-3px);
 }
+
+/* Description */
+#introduce{
+    position: relative;
+    padding-top: 120px;
+}
+
+.introduce-content{
+    width: 80%;
+    margin: auto auto;
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-secondary);
+    border-bottom: 2px solid #e3e9ed;
+}
+
+.description{
+    position: relative;
+}
+
+.description .des-title{
+    display: block;
+    color: var(--color-body-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.des-first-line{
+    margin: 15px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.des-second-line{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+.des-content{
+    padding-right: 15%;
+    font-size: 16px;
+    /* text-align: justify; */
+    line-height: 30px;
+    opacity: 0.9;
+}
+
+.find-me{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+.best-skills{
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+}
+
+.find-title, .skills-title{
+    margin-bottom: 20px;
+    color: var(--color-heading-wv);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Archivo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.find-icons, .skills-icons{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 20px 0 -5px;
+    line-height: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    border-radius: 6px;
+    border: none;
+}
+
+.find-icons .fa-brands{
+    width: 100%;
+    height: 100%;
+    color: var(--color-heading-wv);
+    line-height: 60px;
+}
+
+.find-icons:hover, .skills-icons:hover{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg,#ff014f,#d11414);
+    transform: translateY(-3px);  
+}
+
+.find-icons:hover .fa-brands, .skills-icons:hover .fa-brands{ 
+    color: #fff;
+    transition: 0.8s;
+}
+
+/* Resume */
+/* #resume{
+    padding: 100px 0;
+}
+
+.resume-title{
+    text-align: center;
+    font-family: var(--font-secondary);
+}
+
+.resume-title .subtitle{
+    color: #F9004D;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.resume-title .title{
+    color: var(--color-body-white);
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.resume-nav-bar{
+    margin-top: 50px;
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+}
+
+.resume-nav-inner{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background: var(--gradient-box-w);
+    border-radius: 10px;
+    box-shadow: var(--shadow-white-3) ;
+}
+
+.resume-nav-inner li{
+    width: 25%;
+    padding: 30px 0;
+    font-size: 18px;
+    text-align: center;
+    background: transparent;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.resume-nav-inner .active{
+    color: var(--color-primary);
+    background: var(--gradient-box-w) ;
+    box-shadow: var(--shadow-white-3) ;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.education, .proskills{
+    margin-top: 40px;
+}
+
+
+.job-experience,
+.education-quality{
+    margin-top: 50px;
+    border-left: 5px solid #d9dee2;
+}
+
+.job-content .subtitle,
+.education-content .subtitle{
+    color: var(--color-subtitle);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: var(--font-primary);
+}
+
+.job-content .maintitle,
+.education-content .maintitle{
+    color: var(--color-heading-wv);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 62px;
+    font-family: var(--font-secondary);
+}
+
+.job-content .job-list,
+.education-content .education-list{
+    width: 90%;
+    padding: 20px;
+    font-family: var(--font-primary);
+    background: var(--gradient-box-w) ;
+    box-shadow: var(--shadow-white-3) ;
+    position: relative;
+    margin: 0 0 50px 30px;
+    border-radius: 6px;
+}
+
+.job-content .job-list .inner,
+.education-content .education-list .inner{
+    width: 80%;
+    padding: 20px;
+}
+
+.job-content .inner .branch,
+.education-content .inner .branch{
+    width: 28px;
+    height: 5px;
+    background-color: #d9dee2;
+    position: absolute;
+    right: 100%;
+    top: 63px;
+    transform: translateY(-7px);
+}
+
+.job-content .inner .branch-circle,
+.education-content .inner .branch-circle{
+    border-radius: 100%;
+    height: 20px;
+    position: absolute;
+    right: 104%;
+    top: 55px;
+    transform: translateY(-7px);
+    transition: var(--transition);
+    width: 20px;
+    background: #ecf0f3;
+    border: 5px solid #d9dee2;
+}
+
+.job-list .inner .heading, 
+.education-list .inner .heading{
+    position: relative;
+    border-bottom: 2px solid #e3e9ed;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.job-list .heading .date-and-time,
+.education-list .heading .date-and-time{
+    position: absolute;
+    background: var(--color-white);
+    box-shadow: var(--shadow-white-3);
+    color: var(--color-primary);
+    display: block;
+    font-size: 14px;
+    font-weight: 540;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    transition: var(--transition);
+    border-radius: 6px;
+    top: 20px;
+    right: -100px;
+}
+
+.job-list .heading .job-list-title,
+.education-list .heading .edu-list-title{
+    color: #1E2125;
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 7px;
+}
+
+.job-list .heading .job-list-time,
+.education-list .heading .edu-list-time{
+    color: #3C3E41;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.job-list .inner .job-list-content,
+.education-list .inner .edu-list-content{
+    color: #3C3E41;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.proskills{
+    display: none;
+}
+
+.find-icons, .skills-icons{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 20px 0 -5px;
+    line-height: 60px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    border-radius: 6px;
+    border: none;
+}
+
+.find-icons .fa-brands{
+    width: 100%;
+    height: 100%;
+    color: var(--color-heading-wv);
+    line-height: 60px;
+}
+
+.find-icons:hover, .skills-icons:hover{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg,#ff014f,#d11414);
+    transform: translateY(-3px);  
+}
+
+.find-icons:hover .fa-brands, .skills-icons:hover .fa-brands{ 
+    color: #fff;
+    transition: 0.8s;
+} */
+/* Testimonial */
+/* .testimonial{
+    position: relative;
+}
+
+.tes-slider{
+    padding-bottom: 150px;
+}
+
+.testimonial .quotes-icon{
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    font-size: 120px;
+}
+
+.testimonial .quotes-icon .fa-quote-right{
+    color: #eef6fcfd;
+    text-shadow: 0 0 3px #000;
+}
+
+.tes-btn{
+    position: absolute;
+    top: 27%;
+    right: 16%;
+}
+
+.tes-btn .button{
+    padding: 20px 25px;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #ff014f;
+    border: none;
+    cursor: pointer;
+}
+
+.tes-btn .button:hover{
+    color: #FFF;
+    background: #ff014f;
+    transition: 0.8s;
+}
+
+.card{
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.card-infor{
+    width: 36%;
+    padding: 40px 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+.card-infor .tes-img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-infor .tes-img img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    transition: transform .5s ease;
+}
+
+.card-infor .tes-img:hover img{
+    height: 250px;
+    border-radius: 10px;
+    transform: scale(1.15);
+}
+
+.card-content .card-subtitle{
+    display: block;
+    margin-top: 30px;
+    color: #ff014f;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-sizing: content-box;
+}
+
+.card-content .title{
+    margin: 10px 0;
+    color: #1E2125;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card-content .content{
+    color: #3C3E41;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+}
+
+.card-content .title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-description{
+    width: 60%;
+    padding: 60px 50px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-description .rating{
+    padding: 15px;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    display: flex;
+    justify-content: space-around;
+    color: yellow;
+    font-size: 12px;
+}
+
+.card-description .title{
+    color: #1E2125;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-description .date{
+    color: #3c3e41;
+    display: block;
+    padding: 20px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 560;
+}
+
+.card-description .description{
+    color: #3c3e41;
+    font-size: 18px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.tes-radio-btns{
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tes-radio-btns .tes-radio-btn{
+    margin: 0 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #CED2D5;
+    cursor: pointer;
+}
+
+.tes-radio-btns .active{
+    background-color: #ff014f;
+} */
+
+
+
+
+
+
+
+
+
 
 /*  */
 #clients-cnt .container .Box .boxImage img{
