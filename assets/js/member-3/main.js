@@ -52,26 +52,3 @@ $(document).ready(function(){
         return false;
     })
 })
-
-
-$(document).ready(function(){
-
-})
-
-// $(document).ready(function(){
-//     $('#tab-standard').hide();
-//     $('#tab-premium').hide();
-//     $('#tab-basic').fadeIn();
-//     $('.pricinglist').on('click',function(){
-//         $(this).siblings().removeClass('active');
-//         $(this).addClass('active');
-
-//         let id_tab_pricing = $(this).children('a').attr('href');
-//         console.log(id_tab_pricing)
-//         $('#tab-standard').hide();
-//         $('#tab-premium').hide();
-//         $('#tab-basic').hide();
-//         $(id_tab_pricing).fadeIn();
-//         return false;
-//     })
-// })
