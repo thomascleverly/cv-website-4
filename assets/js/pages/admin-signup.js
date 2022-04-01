@@ -21,7 +21,7 @@ function handleSubmit() {
             $("#not_found_account").html("*Tài khoản hoặc mật khẩu sai")
         }
         else {
-            window.location.href = ''
+            $(".submit-btn").attr('href','./admin.html')
         }
     } 
 }
