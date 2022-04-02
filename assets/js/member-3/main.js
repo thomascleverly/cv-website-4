@@ -52,3 +52,39 @@ $(document).ready(function(){
         return false;
     })
 })
+
+$(document).ready(function() {
+
+    $('#contact_email').blur(function() {
+        var input=$(this);
+        var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var is_email=re.test(input.val());
+        if ($('#contact_email').val()==""){
+            $('.error_email').hide()
+        }
+        else if (is_email)
+            $('.error_email').hide();
+        else{
+            $('.error_email').text('invalid email address')
+            $('.error_email').fadeIn()
+        }
+        if(is_email){input.removeClass("invalid").addClass("valid");}
+        else{input.removeClass("valid").addClass("invalid");}
+    });
+
+
+    $('#contact_submit').click(function(){
+        $('.textField').each(function(){
+            if ($(this).val()==""){
+                let x = $(this).attr('name').toLowerCase()
+                console.log(x)
+                $(`.error_${x}`).text(`${$(this).attr('name')} is required.`)
+                $(`.error_${x}`).fadeIn()
+            }
+            else if ($(this).attr('name')!='Email'){
+                let x = $(this).attr('name').toLowerCase()
+                $(`.error_${x}`).hide()
+            }
+        })
+    })
+});
