@@ -84,7 +84,30 @@ $(document).ready(function(){
         }
     )
 
-
+    // Clients Menu
+    let clientsMenuIsSelected = 'HTML'
+    $('.clients-infor').hide()
+    $(`.${clientsMenuIsSelected.toLowerCase()}`).fadeIn()
+    $('.clients-menu').click(function(){
+        $('.clients-menu').removeClass('active')
+        $(this).addClass('active')
+        clientsMenuIsSelected = $(this).text()
+        console.log(clientsMenuIsSelected)
+        $('.clients-infor').hide()
+        if (clientsMenuIsSelected=='Professional Skills')
+            $('.proskills').fadeIn()
+        else
+            $(`.${clientsMenuIsSelected.toLowerCase()}`).fadeIn()
+    })
+    // $('.clients-menu').hover(function(){
+    //     $(this).addClass('active')
+    //     }, function(){
+    //         $('.clients-menu').each(function(){
+    //             if ($(this).text()!=clientsMenuIsSelected)
+    //                 $(this).removeClass('active')
+    //         })
+    //     }
+    // )
 })
 
 let slideIndex = 1;
@@ -98,24 +121,20 @@ function showDivs(n) {
   var y = $(".tes-radio-btn")
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    y[i].className = "tes-radio-btn"  
-  }
-  x[slideIndex-1].style.display = "block"; 
-  y[slideIndex-1].className = 'tes-radio-btn active' 
+  $(x).hide()
+  $(y).removeClass('active')
+  $(x[slideIndex-1]).fadeIn()
+  $(y[slideIndex-1]).addClass('tes-radio-btn active') 
 }
 
 function btnShowDivs(n) {
     var i;
     var x = $(".tes-slider")
     var y = $(".tes-radio-btn")
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-      y[i].className = "tes-radio-btn"
-    }
-    x[n].style.display = "block";  
-    y[n].className = 'tes-radio-btn active'
+    $(x).hide()
+    $(y).removeClass('active')
+    $(x[n]).fadeIn()
+    $(y[n]).addClass('tes-radio-btn active') 
 }
 
 
