@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(this.scrollY > 100){
+        if(this.scrollY > 80){
             $('.header').addClass('sticky');  
         }else{
             $('.header').removeClass('sticky');  
@@ -10,6 +10,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+
     $('.member').on('click',function(){
         $(this).siblings().removeClass('active-img');
         $(this).addClass('active-img');
@@ -20,6 +21,17 @@ $(document).ready(function(){
         $(this).siblings().removeClass('active-item');
         $(this).addClass('active-item');
     })
+
+
+    // Text Run
+    var typed = new Typed(".typing", {
+        strings: ["Pupil.","Interns.","Web Developer.","Freelancer."],
+        typeSpeed :100,
+        backSpeed :60,
+        loop :true
+
+    })
+
 
     $('.skils').hide();
     $('.row-education').fadeIn();
@@ -35,6 +47,13 @@ $(document).ready(function(){
         $(id_tab).fadeIn();
         return false;
     })
+
+        $('.nav-client').on('click',function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    })
+    
+
 
     $('.premium').hide();
     $('.standard').hide();
