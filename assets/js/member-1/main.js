@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    let menuIsSelected = 'Home'
     $(window).scroll(function(){
         if (this.scrollY>200){
             $('#header').addClass('header-fixed')
@@ -13,42 +14,43 @@ $(document).ready(function(){
         if (this.scrollY>4020){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
-                if ($(this).text()=='Pricing')
+                if ($(this).text()=='Pricing'){
                     $(this).addClass('active')
+                    menuIsSelected = 'Pricing'
+                }
             })
         }
         else if (this.scrollY>3250){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
-                if ($(this).text()=='Clients')
+                if ($(this).text()=='Clients'){
                     $(this).addClass('active')
+                    menuIsSelected = 'Clients'
+                }
             })
         }
         else if (this.scrollY>700){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
-                if ($(this).text()=='Resume')
+                if ($(this).text()=='Resume'){
                     $(this).addClass('active')
+                    menuIsSelected = 'Resume'
+                }
             })
         }
         else{
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
-                if ($(this).text()=='Home')
+                if ($(this).text()=='Home'){
                     $(this).addClass('active')
+                    menuIsSelected = 'Home'
+                }
             })
         }
-        // if (this.scrollY>1000){
-        //     $('.menu-inner').removeClass('active')
-        //     $('.menu-inner').each(function(){
-        //         if ($(this).text()=='Clients')
-        //             $(this).addClass('active')
-        //     })
-        // }
+        
     })
 
     // Header Menu
-    let menuIsSelected = 'Home'
     $('.menu-inner').click(function(){
         $('.menu-inner').removeClass('active')
         $(this).addClass('active')
@@ -59,10 +61,10 @@ $(document).ready(function(){
         let menu = $(this).text()
         $('.menu-inner').each(function(){
             if ($(this).text()!=menuIsSelected && $(this).text()!=menu)
-                $(this).css('opacity','0.6')
+                $(this).css('opacity','0.4')
         })
         }, function(){
-            $('.menu-inner').css('opacity','1')
+            $('.menu-inner').css('opacity','0.8')
         }
     )
 
@@ -115,6 +117,7 @@ $(document).ready(function(){
         $('.pricing-single-list').hide()
         $(`.${pricingMenuIsSelected.toLowerCase()}`).fadeIn()
     })
+
 })
 
 let slideIndex = 1;
@@ -146,34 +149,36 @@ function btnShowDivs(n) {
 
 
 
-let textWrapper = document.querySelector('.intro-job');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-anime.timeline({loop: true})
-.add({
-    targets: '.intro-job .letter',
-    scale: [0.3,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 600,
-    delay: (el, i) => 70 * (i+1)
-}).add({
-    targets: '.intro-job',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700,
-    offset: '-=875',
-    delay: (el, i, l) => 80 * (l - i)
-}).add({
-    targets: '.intro-job',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-});
+// let textWrapper = document.querySelector('.intro-job');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// anime.timeline({loop: true})
+// .add({
+//     targets: '.intro-job .letter',
+//     scale: [0.3,1],
+//     opacity: [0,1],
+//     translateZ: 0,
+//     easing: "easeOutExpo",
+//     duration: 600,
+//     delay: (el, i) => 70 * (i+1)
+// }).add({
+//     targets: '.intro-job',
+//     scaleX: [0,1],
+//     opacity: [0.5,1],
+//     easing: "easeOutExpo",
+//     duration: 700,
+//     offset: '-=875',
+//     delay: (el, i, l) => 80 * (l - i)
+// }).add({
+//     targets: '.intro-job',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+// });
 
-
-
-
-
+var typed = new Typed(".job-typing-letters", {
+    strings: ["Student.","Web Developer."],
+    typeSpeed :100,
+    backSpeed :60,
+    loop :true
+})

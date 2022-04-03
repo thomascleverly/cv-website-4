@@ -16,7 +16,7 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 
 <body>
@@ -55,8 +55,8 @@
                     <li class="elements-center"><a href="#resume" class="menu-inner">Resume</a></li>
                     <li class="elements-center"><a href="#clients" class="menu-inner">Clients</a></li>
                     <li class="elements-center"><a href="#pricing" class="menu-inner">Pricing</a></li>
-                    <li class="elements-center"><a href="#" class="menu-inner">Blog</a></li>
-                    <li class="elements-center"><a href="#" class="menu-inner">Contact</a></li>
+                    <li class="elements-center"><a href="#blog" class="menu-inner">Blog</a></li>
+                    <li class="elements-center"><a href="#contact" class="menu-inner">Contact</a></li>
                 </ul>
             </div>
             <div class="buy-btn elements-center">
@@ -75,10 +75,10 @@
                         <span>Hi, I'm </span><span style="color: #ff014f">Thomas</span>
                     </div>
                     <div class="second-line">
-                        <span style="color: #ff014f">a </span><span class="intro-job">Developer.</span>
+                        <span style="color: #ff014f">a </span><span class="job-typing-letters"></span>
                     </div>
                     <p class="content">
-                        My birth name is Dao Tuan Anh, but my family and my closed friends call me Tom/Thomas .I'm
+                        My birth name is Dao Tuan Anh, but my family and my closed friends call me Tom/Thomas. I'm
                         studying the second year in a university named Thuy Loi.
                     </p>
                     <div class="find-me">
@@ -638,7 +638,7 @@
             <div class="tes-slides">
                 <!-- Slide 1 -->
                 <div class="row tes-slider border-bottom">
-                    <div class="card elements-space-between">
+                    <div class="tes-card elements-space-between">
                         <div class="circle-white-block card-infor">
                             <div class="tes-img">
                                 <img src="../assets/img/member-1/unknow-person.png">
@@ -670,7 +670,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="row tes-slider border-bottom">
-                    <div class="card">
+                    <div class="tes-card">
                         <div class="circle-white-block card-infor">
                             <div class="tes-img">
                                 <img src="../assets/img/member-1/huyen.PNG">
@@ -702,7 +702,7 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="row tes-slider border-bottom">
-                    <div class="card">
+                    <div class="tes-card">
                         <div class="circle-white-block card-infor">
                             <div class="tes-img">
                                 <img src="../assets/img/member-1/vat.PNG">
@@ -1004,7 +1004,6 @@
                     <!-- End list -->
                 </div>
             </div>
-        </div>
         <!-- End Clients -->
         <!-- Begin Pricing -->
         <div id="pricing">
@@ -1025,7 +1024,7 @@
                     <div class="pricing-single-list basic">
                         <div class="price elements-center poppins">$10.00</div>
                         <div class="time poppins">
-                            <i class="fa-solid fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             2 Days Delivery
                         </div>
                         <div class="heading montserrat">
@@ -1077,7 +1076,7 @@
                     <div class="pricing-single-list standard">
                         <div class="price elements-center poppins">$20.00</div>
                         <div class="time poppins">
-                            <i class="fa-solid fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             2 Days Delivery
                         </div>
                         <div class="heading montserrat">
@@ -1129,7 +1128,7 @@
                     <div class="pricing-single-list premium">
                         <div class="price elements-center poppins">$30.00</div>
                         <div class="time poppins">
-                            <i class="fa-solid fa-clock"></i>
+                            <i class="fa-regular fa-clock"></i>
                             2 Days Delivery
                         </div>
                         <div class="heading montserrat">
@@ -1183,14 +1182,84 @@
         </div>
         <!-- End Pricing -->
         <!-- Begin Blog -->
-        <div id="blog" style="height: 500px;">
+        <div id="blog">
             <div class="content-title">
                 <span class="subtitle">VISIT MY BLOG AND KEEP YOUR FEEDBACK</span>
                 <h2 class="title">My Blog</h2>
             </div>
+            <div class="row-85 blog-content elements-space-around border-bottom">
+                <div class="col-3 elements-center">
+                    <div class="blog-card">
+                        <div class="row-85 card-img center">
+                            <img src="../assets/img/member-1/blog-1.webp" alt="">
+                        </div>
+                        <div class="row-85 category-infor elements-space-between poppins">
+                            <span class="place">Canada</span>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>2 min read</span>
+                            </div>
+                        </div>
+                        <div class="row-85 title montserrat">
+                            <span class="blog-card-title">
+                                T-shirt design is the part of design
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 elements-center">
+                    <div class="blog-card">
+                        <div class="row-85 card-img center">
+                            <img src="../assets/img/member-1/blog-2.webp" alt="">
+                        </div>
+                        <div class="row-85 category-infor elements-space-between poppins">
+                            <span class="place">Development</span>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>2 min read</span>
+                            </div>
+                        </div>
+                        <div class="row-85 title montserrat">
+                            <span class="blog-card-title">
+                                T-shirt design is the part of design
+                                <i class="fa-solid fa-arrow-trend-up w3-animate-fading"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 elements-center">
+                    <div class="blog-card">
+                        <div class="row-85 card-img center">
+                            <img src="../assets/img/member-1/blog-3.webp" alt="">
+                        </div>
+                        <div class="row-85 category-infor elements-space-between poppins">
+                            <span class="place">Application</span>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <span>2 min read</span>
+                            </div>
+                        </div>
+                        <div class="row-85 title montserrat">
+                            <span class="blog-card-title">
+                                T-shirt design is the part of design
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Blog -->
+        <!-- Begin Contact -->
+        <div class="contact" style="height: 1000px;">
+            <div class="row">
+                
+            </div>
+        </div>
+        <!-- End Contact -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/member-1/main.js"></script>
