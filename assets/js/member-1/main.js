@@ -118,6 +118,8 @@ $(document).ready(function(){
         $(`.${pricingMenuIsSelected.toLowerCase()}`).fadeIn()
     })
 
+    // Contact Form
+    
 })
 
 let slideIndex = 1;
@@ -147,36 +149,7 @@ function btnShowDivs(n) {
     $(y[n]).addClass('tes-radio-btn active') 
 }
 
-
-
-// let textWrapper = document.querySelector('.intro-job');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-// anime.timeline({loop: true})
-// .add({
-//     targets: '.intro-job .letter',
-//     scale: [0.3,1],
-//     opacity: [0,1],
-//     translateZ: 0,
-//     easing: "easeOutExpo",
-//     duration: 600,
-//     delay: (el, i) => 70 * (i+1)
-// }).add({
-//     targets: '.intro-job',
-//     scaleX: [0,1],
-//     opacity: [0.5,1],
-//     easing: "easeOutExpo",
-//     duration: 700,
-//     offset: '-=875',
-//     delay: (el, i, l) => 80 * (l - i)
-// }).add({
-//     targets: '.intro-job',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-// });
-
-var typed = new Typed(".job-typing-letters", {
+let typed = new Typed(".job-typing-letters", {
     strings: ["Student.","Web Developer."],
     typeSpeed :100,
     backSpeed :60,
