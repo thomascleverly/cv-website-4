@@ -11,7 +11,25 @@ $(document).ready(function(){
         }
 
         // Scroll
-        if (this.scrollY>4020){
+        if (this.scrollY>5630){
+            $('.menu-inner').removeClass('active')
+            $('.menu-inner').each(function(){
+                if ($(this).text()=='Contact'){
+                    $(this).addClass('active')
+                    menuIsSelected = 'Contact'
+                }
+            })
+        }
+        else if (this.scrollY>4850){
+            $('.menu-inner').removeClass('active')
+            $('.menu-inner').each(function(){
+                if ($(this).text()=='Blog'){
+                    $(this).addClass('active')
+                    menuIsSelected = 'Blog'
+                }
+            })
+        }
+        else if (this.scrollY>4020){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Pricing'){
@@ -20,7 +38,7 @@ $(document).ready(function(){
                 }
             })
         }
-        else if (this.scrollY>3250){
+        else if (this.scrollY>3200){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Clients'){
@@ -29,7 +47,7 @@ $(document).ready(function(){
                 }
             })
         }
-        else if (this.scrollY>700){
+        else if (this.scrollY>780){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Resume'){
@@ -119,13 +137,63 @@ $(document).ready(function(){
     })
 
     // Contact Form
-    
+    $('.contact-field').each(function(){
+        $(this).on('propertychange input', function (e) {
+            let valueChanged = false;
+            if (e.type=='propertychange') {
+                valueChanged = e.originalEvent.propertyName=='value';
+            } else {
+                valueChanged = true;
+            }
+            if (valueChanged && $(this).val()=="") {
+                $(`.status${$(this).attr('name')}`).text(`${$(this).attr('name')} is required.`)
+            }
+            else{
+                $(`.status${$(this).attr('name')}`).text('')
+            }
+        });
+    })
+
+    $('.emailText').on('propertychange input', function (e) {
+        let valueChanged = false;
+        let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        if (e.type=='propertychange') {
+            valueChanged = e.originalEvent.propertyName=='value';
+        } else {
+            valueChanged = true;
+        }
+        if (valueChanged && emailRegex.test($(this).val())==false && $(this).val()!="") {
+            $(`.status${$(this).attr('name')}`).text(`invalid email address.`)
+        }
+    });
+
+    // Send Message Button
+    $('.send-btn').click(function(){
+        $('.contact-field').each(function(){
+            if ($(this).val()==""){
+                $(`.status${$(this).attr('name')}`).text(`${$(this).attr('name')} is required.`)
+            }
+            else if($(this).attr('name')!='Email'){
+                $(`.status${$(this).attr('name')}`).text('')
+            }
+        })
+    })
 })
 
 let slideIndex = 1;
 showDivs(slideIndex);
 function plusDivs(n) {
   showDivs(slideIndex += n);
+}
+function btnShowDivs(n) {
+    var i;
+    var x = $(".tes-slider")
+    var y = $(".tes-radio-btn")
+    $(x).hide()
+    $(y).removeClass('active')
+    $(x[n]).fadeIn()
+    $(y[n]).addClass('tes-radio-btn active') 
+    slideIndex = n;
 }
 function showDivs(n) {
   var i;
@@ -139,15 +207,6 @@ function showDivs(n) {
   $(y[slideIndex-1]).addClass('tes-radio-btn active') 
 }
 
-function btnShowDivs(n) {
-    var i;
-    var x = $(".tes-slider")
-    var y = $(".tes-radio-btn")
-    $(x).hide()
-    $(y).removeClass('active')
-    $(x[n]).fadeIn()
-    $(y[n]).addClass('tes-radio-btn active') 
-}
 
 let typed = new Typed(".job-typing-letters", {
     strings: ["Student.","Web Developer."],
