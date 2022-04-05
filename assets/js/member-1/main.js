@@ -193,7 +193,7 @@ function btnShowDivs(n) {
     $(y).removeClass('active')
     $(x[n]).fadeIn()
     $(y[n]).addClass('tes-radio-btn active') 
-    slideIndex = n;
+    slideIndex = n+1;
 }
 function showDivs(n) {
   var i;
