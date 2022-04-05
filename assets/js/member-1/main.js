@@ -10,6 +10,14 @@ $(document).ready(function(){
             $('#introduce').css('paddingTop','0')
         }
 
+        // Up Icon
+        if (this.scrollY>150){
+            $('.up-icon').fadeIn()
+        }
+        else{
+            $('.up-icon').hide()
+        }
+
         // Scroll
         if (this.scrollY>5630){
             $('.menu-inner').removeClass('active')
