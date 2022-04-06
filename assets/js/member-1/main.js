@@ -94,6 +94,17 @@ $(document).ready(function(){
         }
     )
 
+    // Menu Bar Button
+    $('.mobile-menu').hide()
+    $('.menu-bar-btn').click(function(){
+        $('.mobile-menu').fadeIn()
+    })
+
+    // Close Button
+    $('.close-btn').click(function(){
+        $('.mobile-menu').fadeOut()
+    })
+
     // Resume Menu
     let resumeMenuIsSelected = 'Education'
     $('.resume-list').hide()

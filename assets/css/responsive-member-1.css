@@ -11,16 +11,24 @@
 /* Mobile */
 @media (max-width: 740px){
     #header{
-        width: 100vh;
-        height: 60px;
-        position: relative;
+        width: 100%;
+        position: fixed;
         padding: 0px 0px;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        z-index: 1;
     }
     #header .nav-bar{
         display: block;
     }
-    .members-logo{
+    .members-logo img{
+        height: 60px;
+    }
+    .members-logo:first-child img{
+        height: 75px;
+    }
+    /* .members-logo{
         position: absolute;
         padding: 0;
         margin: 0 5px;
@@ -39,11 +47,18 @@
         top: 18px;
     }
     .member-2{
-        left: 120px;
+        left: 140px;
         top: 20px;
-    }.member-3{
-        left: 220px;
+    }
+    .member-3{
+        left: 260px;
         top: 20px;
+    } */
+    .member-2{
+        margin-left: 60px;
+    }
+    .member-3{
+        margin-left: 55px;
     }
     .menu{
         display: none;
@@ -52,17 +67,35 @@
         display: none;
     }
     .menu-bar-btn{
+        width: 5%;
         display: flex;
+        margin-left: 25%;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 40%;
-        right: 40%;
         color: #ff014f;
         width: 60px;
         height: 60px;
         font-size: 20px;
-        z-index: 3000;
+        z-index: 1;
         cursor: pointer;
+    }
+    .introduce-content{
+        flex-direction: column-reverse;
+    }
+    .intro-description{
+        width: 100%;
+        margin: -200px 0 0 0;
+        height: 650px;
+    }
+    .intro-description .find-me,
+    .intro-description .best-skills{
+        position: relative;
+        margin-top: 30px;
+    }
+    .introduce-content .des-img{
+        margin: 20px 0 0 25%;
+    }
+    .resume-list{
+        flex-direction: column;
     }
 }
