@@ -264,12 +264,11 @@ html {
 /* Introduce */
 #introduce{
     position: relative;
-    /* padding-top: 120px; */
 }
 
 .introduce-content{
     width: 85%;
-    margin: auto auto;
+    margin: 0 auto 0 auto;
     padding: 100px 20px;
     font-family: "Montserrat",sans-serif;
 }
