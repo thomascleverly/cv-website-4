@@ -22,6 +22,9 @@
     #header .nav-bar{
         display: block;
     }
+    .header-fixed{
+        height: 70px !important;
+    }
     .members-logo img{
         height: 60px;
     }
@@ -101,6 +104,11 @@
     }
     .resume-list-section .heading .rating{
         top: 50%;
+        right: -25px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
     }
     .resume-content .inner .branch-circle{
         right: 106%;
@@ -111,7 +119,6 @@
     /* Testimonial */
     .tes-slider{
         height: 950px;
-        padding-bottom: 50px;
         border-bottom: 1px solid #cfdee7;
     }
     #testimonial .quotes-icon,
@@ -128,7 +135,8 @@
         top: 500px;
         right: 0;
         left: 0;
-        height: 300px;
+        height: 320px;
+        margin-bottom: 100px;
     }
     .tes-card .card-infor{
         position: absolute;
@@ -143,7 +151,7 @@
         top: 36%
     }
     .tes-radio-btns{
-        bottom: 5%;
+        bottom: 4%;
     }
     /* Clients */
     .clients-content{
@@ -200,5 +208,64 @@
         text-align: center;
         bottom: -2%;
         left: 0;
+    }
+    /* Blog */
+    .blog-content{
+        flex-direction: column;
+    }
+    .blog-list{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .blog-list:last-child{
+        margin-bottom: -20px;
+    }
+    /* Contact */
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-infor,
+    .contact-form{
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-infor{
+        margin-bottom: 40px;
+    }
+    .contact-infor .social-area li{
+        margin-right: 20px;
+    }
+    @media (max-width: 500px){
+        #header{
+            height: 90px;
+        }
+        .introduce-content .des-img{
+            height: 300px;
+            margin: 20px 0 0 25%;
+        }
+        .members-logo img{
+            height: 40px;
+        }
+        .members-logo:first-child img{
+            height: 55px;
+        }
+        .member-2{
+            margin-left: 50px;
+        }
+        .member-3{
+            margin-left: 30px;
+        }
+        .menu-bar-btn{
+            width: 5%;
+            display: flex;
+            margin-left: 23%;
+        }
+        .resume-content .inner .branch-circle{
+            right: 108%;
+        }
+        .tes-card .card-description .rating{
+            top: 80%;
+            right: 36%;
+        }
     }
 }
