@@ -19,7 +19,7 @@ $(document).ready(function(){
         }
 
         // Scroll
-        if (this.scrollY>5630){
+        if (this.scrollY>4940){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Contact'){
@@ -28,7 +28,7 @@ $(document).ready(function(){
                 }
             })
         }
-        else if (this.scrollY>4850){
+        else if (this.scrollY>4150){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Blog'){
@@ -37,7 +37,7 @@ $(document).ready(function(){
                 }
             })
         }
-        else if (this.scrollY>4020){
+        else if (this.scrollY>3300){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Pricing'){
@@ -46,7 +46,7 @@ $(document).ready(function(){
                 }
             })
         }
-        else if (this.scrollY>3200){
+        else if (this.scrollY>2500){
             $('.menu-inner').removeClass('active')
             $('.menu-inner').each(function(){
                 if ($(this).text()=='Clients'){

@@ -923,6 +923,11 @@ html {
     transition: 0.2s;
 }
 
+.pricing-check .check-section{
+    display: flex;
+    align-items: center;
+}
+
 /* Blog */
 #blog{
     padding: 100px 0 0 0;

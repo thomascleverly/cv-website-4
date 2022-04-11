@@ -1,10 +1,10 @@
 /* PC*/
-@media (min-width: 1100px){
+@media (min-width: 1025px){
 
 }
 
 /* Mobile and Tablet */
-@media (max-width: 1023px){
+@media (max-width: 1024px){
     #header{
         width: 100%;
         position: fixed;
@@ -98,8 +98,8 @@
         width: 210%;
     }
     .resume-list-section .heading .rating{
-        top: 50%;
-        right: -25px;
+        top: 62%;
+        right: -5px;
         font-size: 12px;
         height: 30px;
         line-height: 30px;
@@ -235,6 +235,11 @@
         margin-left: 30%;
     }
     /* Tablet */
+    @media (min-width: 850px){
+        .menu-bar-btn{
+            margin-left: 35%;
+        }
+    }
     @media (min-width: 740px) and (max-width: 1023px){
         .menu-bar-btn{
             margin-left: 30%;
@@ -274,7 +279,7 @@
         }
         .tes-card .card-description .rating{
             top: 80%;
-            right: 36%;
+            right: 35%;
         }
     }
     @media (max-width: 400px){
