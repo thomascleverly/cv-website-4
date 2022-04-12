@@ -24,61 +24,189 @@
                 Home Page
             </a>
         </div>
-        <div class="admin">
+        <div class="log-out-btn">
+            <a href="./admin-signin.html">
+                <span>Log out</span>
+            </a>
+        </div>
+        <div class="users-btn active">
+            <a href="#">
+                <span>Users</span>
+            </a>
+        </div>
+        <div class="members-btn">
+            <a href="#">
+                <span>Members</span>
+            </a>
+        </div>
+        <!-- User Management -->
+        <div class="admin admin-user">
+            <div class="title">
+                <h1>Users Management</h1>
+            </div>
+
+            <div class="admin-form">
+                <div class="field">
+                    <input class="member-field emailText" type="text" name="Username" placeholder="Username">
+                    <label class="status statusEmail"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="email" placeholder="Email" name="Email" required>
+                    <label class="status statusSubject"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="password" placeholder="Password" name="Password">
+                    <label class="status statusSubject"></label>
+                </div>
+                <div class="row buttons">
+                    <div class="btn add-btn add-btn-js">Add</div>
+                    <div class="btn read-btn edit-btn-js">Read</div>
+                    <div class="btn update-btn update-btn-js">Update</div>
+                    <div class="btn remove-btn remove-btn-js">Remove</div>
+                </div>
+                <div class="title">
+                    <span>#</span>
+                    <span>Username</span>
+                    <span>Email</span>
+                    <span>Password</span>
+                    <span>Edit</span>
+                    <span>Remove</span>
+                </div>
+                <div class="row member">
+                    <span class="number">1</span>
+                    <span class="name">Thomas (Đào Tuấn Anh)</span>
+                    <span class="email">admin@tlu.edu.vn</span>
+                    <span class="password">admin</span>
+                    <div class="edit-icon edit-icon-js">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="row member">
+                    <span class="number">2</span>
+                    <span class="name">Huyen (Hà Thanh Huyền)</span>
+                    <span class="email">huyen@tlu.edu.vn</span>
+                    <span class="password">admin</span>
+                    <div class="edit-icon edit-icon-js">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="row member">
+                    <span class="number">3</span>
+                    <span class="name">Duong (Tô Tùng Dương)</span>
+                    <span class="email">duong@tlu.edu.vn</span>
+                    <span class="password">admin</span>
+                    <div class="edit-icon edit-icon-js">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Members Management -->
+        <div class="admin admin-member">
             <div class="title">
                 <h1>Members Management</h1>
             </div>
 
             <div class="admin-form">
+                <div class="field">
+                    <input class="member-field" type="text" name="Username" placeholder="Name">
+                    <label class="status statusEmail"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="email" placeholder="Position" name="Email">
+                    <label class="status statusSubject"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="password" placeholder="Date Of Borned" name="Password">
+                    <label class="status statusSubject"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field emailText" type="text" name="Username" placeholder="Phone">
+                    <label class="status statusEmail"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="email" placeholder="Email" name="Email" required>
+                    <label class="status statusSubject"></label>
+                </div>
+                <div class="field">
+                    <input class="member-field" type="password" placeholder="Address" name="Password">
+                    <label class="status statusSubject"></label>
+                </div>
                 <div class="row buttons">
                     <div class="btn add-btn add-btn-js">Add</div>
-                    <div class="btn edit-btn edit-btn-js">Edit</div>
+                    <div class="btn read-btn edit-btn-js">Read</div>
+                    <div class="btn update-btn update-btn-js">Update</div>
                     <div class="btn remove-btn remove-btn-js">Remove</div>
                 </div>
+                <div class="title">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>Position</span>
+                    <span>Date Of Borned</span>
+                    <span>Phone</span>
+                    <span>Email</span>
+                    <span>Address</span>
+                    <span>Edit</span>
+                    <span>Remove</span>
+                </div>
                 <div class="row member">
-                    <a href="../members-pages/member-1.html">
-                        <span>1</span>
-                        <span class="name">Thomas (Đào Tuấn Anh) - Leader</span>
-                    </a>
-                    <div class="remove-icon remove-icon-js">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
+                    <span class="number">1</span>
+                    <span class="name">Thomas (Đào Tuấn Anh)</span>
+                    <span class="position">Junior Web Developern</span>
+                    <span class="birth">28th June, 2002</span>
+                    <span class="phone">0337223434</span>
+                    <span class="email">2051063715 @tlu.edu.vn</span>
+                    <span class="address">Hanoi</span>
                     <div class="edit-icon edit-icon-js">
                         <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </div>
                 <div class="row member">
-                    <a href="#">
-                        <img src="../assets/img/member-1/logo-2.JPG" alt="Avatar" class="avatar">
-                        <span class="name">Huyền (Hà Thanh Huyền) - Member</span>
-                    </a>
-                    <div class="remove-icon remove-icon-js">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
+                    <span class="number">2</span>
+                    <span class="name">Huyen (Hà Thanh Huyền)</span>
+                    <span class="position">Junior Web Developern</span>
+                    <span class="birth">28th June, 2002</span>
+                    <span class="phone">0337223434</span>
+                    <span class="email">2051063715 @tlu.edu.vn</span>
+                    <span class="address">Hanoi</span>
                     <div class="edit-icon edit-icon-js">
                         <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </div>
                 <div class="row member">
-                    <a href="#">
-                        <img src="../assets/img/member-1/logo-2.JPG" alt="Avatar" class="avatar">
-                        <span class="name">Dương (Tô Tùng Dương) - Member</span>
-                    </a>
-                    <div class="remove-icon remove-icon-js">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
+                    <span class="number">3</span>
+                    <span class="name">Duong (Tô Tùng Dương)</span>
+                    <span class="position">Junior Web Developern</span>
+                    <span class="birth">28th June, 2002</span>
+                    <span class="phone">0337223434</span>
+                    <span class="email">2051063715 @tlu.edu.vn</span>
+                    <span class="address">Hanoi</span>
                     <div class="edit-icon edit-icon-js">
                         <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="remove-icon remove-icon-js">
+                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="log-out-btn">
-            <a href="./admin-signup.html">
-                <span>Log out</span>
-            </a>
-        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/pages/admin.js"></script>
 </body>
 </html>
