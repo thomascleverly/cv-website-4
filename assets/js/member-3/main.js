@@ -119,6 +119,24 @@ $(document).ready(function(){
         $(id_tab).fadeIn();
         return false;
     })
+
+    // Blog Page
+    $('.background').hide()
+    $('.blog-page').hide()
+    $('.btn-close-bp').click(function(){
+        let id_btn = $(this).children('a').attr('href');
+        $('.background').hide()
+        $('.blog-page').hide()
+        $(id_btn).fadeIn()
+        return false
+    })
+    $('.blog-item').click(function(){
+        let id_btn = $(this).children('a').attr('href');
+        $('.background').fadeIn()
+        $('.blog-page').fadeIn()
+        $(id_btn).fadeIn()
+    })
+
 })
 
 $(document).ready(function() {
