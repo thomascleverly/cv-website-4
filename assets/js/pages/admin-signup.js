@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#eye').click(function(){
+    $('.eye').click(function(){
         $(this).toggleClass('open');
         $(this).children('i').toggleClass('fa-eye-slash fa-eye');
         if($(this).hasClass('open')){
@@ -8,18 +8,20 @@ $(document).ready(function(){
             $(this).prev().attr('type', 'password');
         }
     });
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    $('.submit-btn').click(function(){
+        if ($("#userName").val().length==0 || $("#email").val().length==0 || $("#password").val().length==0){
+            $(".checkEmail").text('You must fill all the gap.')
+        }
+        else if (emailRegex.test($('#email').val())==false){
+            $(".checkEmail").text('Invalid email.')
+        }
+        else if($("#password").val()!=$("#confirmPassword").val()){
+            $(".checkEmail").text('Confirm password incorrect.')
+        }
+        else{
+            alert('Sign up success.')
+            $(".submit-btn").attr('href','./admin-signin.html')
+        }
+    })
 });
-function handleSubmit() {
-    if($('#userName').val().length === 0 && $('#passWord').val().length === 0) {
-        $("#text_when_empty").html('*Vui lòng nhập')
-    }
-    else {
-        $("#text_when_empty").html('')
-        if($('#userName').val() !== 'admin@tlu.edu.vn' || $('#passWord').val() !=='admin' ) {
-            $("#not_found_account").html("*Tài khoản hoặc mật khẩu sai")
-        }
-        else {
-            $(".submit-btn").attr('href','./admin.html')
-        }
-    } 
-}

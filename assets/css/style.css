@@ -10,11 +10,16 @@ html{
     box-sizing: border-box;
 }
 
-.btn-admin>button{
+.btn-signin>button{
+    right: 240px;
+}
+.btn-signup>button{
+    right: 120px;
+}
+.btn-signup>button,
+.btn-signin>button{
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    right: 0;
-    margin-right: 30px;
     height: 45px;
     width: 90px;
     background: linear-gradient(145deg,#e2e8ec,#fff);
@@ -22,24 +27,28 @@ html{
     outline: none;
     border: none;
     pad: 8px 22px;
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 14px;
+    font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.btn-admin a{
+.btn-signup a,
+.btn-signin a{
     color: #FF014F;
     text-decoration: none;
     line-height: 45px;
 }
 
-.btn-admin>button:hover{
+.btn-signup>button:hover,
+.btn-signin>button:hover{
     background: #FF014F;
     transition: 1s;
 }
 
-.btn-admin>button:hover a{
+.btn-signup>button:hover a,
+.btn-signin>button:hover a{
     color: #ecf0f3;
     transition: 1s;
 }
