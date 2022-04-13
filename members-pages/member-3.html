@@ -9,30 +9,61 @@
     <link rel="stylesheet" href="../assets/css/member-3.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
-        <div class="header">
-            <div class="header-left">
-                <a href="../members-pages/member-1.html"><img class="member" src="../assets/img/member-3/avtDTA.jpg" alt=""></a>
-                <a href="../members-pages/member-3.html"><img class="member active-img" src="../assets/img/member-3/avtTTD.jpg" alt=""></a>
-                <a href="../members-pages/member-2.html"><img class="member" src="../assets/img/member-3/avtHTH.jpg" alt=""></a>
+
+        <!-- Begin Header -->
+
+        <div id="header" class="elements-center">
+            <div class="members-logo">
+                <a href="./member-1.html" class="members member-1">
+                    <img src="../assets/img/member-3/new-logo-1.PNG" alt="Avatar">
+                </a>
             </div>
-            <div class="header-center">
-                <ul>
-                    <li class="item active-item">HOME</li>
-                    <li class="item">RESUME</li>
-                    <li class="item">CLIENTS</li>
-                    <li class="item">PRICING</li>
-                    <li class="item">BLOG</li>
-                    <li class="item">CONTACT</li>
-                    <button class="btn-buynow" >BUY NOW</button>
+            <div class="members-logo">
+                <a href="./member-2.html" class="members member-2">
+                    <img src="../assets/img/member-3/new-logo-3.PNG" alt="Avatar">
+                </a>
+            </div>
+            <div class="members-logo members-logo-active">
+                <a href="./member-3.html" class="members member-3">
+                    <img src="../assets/img/member-3/new-logo-2.PNG" alt="Avatar">
+                </a>
+            </div>
+            <div class="menu elements-center">
+                <ul class="nav-bar elements-center">
+                    <li class="elements-center"><a href="#" class="menu-inner active">Home</a></li>
+                    <li class="elements-center"><a href="#resume" class="menu-inner">Resume</a></li>
+                    <li class="elements-center"><a href="#clients" class="menu-inner">Clients</a></li>
+                    <li class="elements-center"><a href="#pricing" class="menu-inner">Pricing</a></li>
+                    <li class="elements-center"><a href="#blog" class="menu-inner">Blog</a></li>
+                    <li class="elements-center"><a href="#contact" class="menu-inner">Contact</a></li>
                 </ul>
             </div>
+            <div class="buy-btn elements-center">
+                <a href="../pages/admin-signup.html">
+                    <span>LOGIN</span>
+                </a>
+            </div>
+
+            <div class="btn-bar">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
         </div>
+
+
+        <!-- End Header -->
+
+
+        <!-- Begin Home -->
+
         <div class="home">
             <div class="home-left">
                 <span class="subtitle">WELCOME TO MY WORLD</span>
-                <span class="tiltemain">Hi, I'm <span>To Tung Duong</span></span>
+                <span class="titlemain">Hi, I'm <span class="titleweight">To Tung Duong</span></span>
+                <div class="titleweight">a <span class="typing"></span></div>
+
                 <ul>
                     <li>Date or birth : 22/04/2002</li>
                     <li>Sex : Men</li>
@@ -48,9 +79,9 @@
                     <div class="home-left-findme">
                         <span>FIND WITH ME</span>
                         <ul>
-                            <li><a href="#"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
-                            <li><a href="#"><button><i class="fa-brands fa-instagram"></i></button></a></li>
-                            <li><a href="#"><button><i class="fa-brands fa-github"></i></button></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100007764138878"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
+                            <li><a href="https://www.instagram.com/dzuongkookie.21/"><button><i class="fa-brands fa-instagram"></i></button></a></li>
+                            <li><a href="https://github.com/ToTungDuong"><button><i class="fa-brands fa-github"></i></button></a></li>
                         </ul>
                     </div>
                     <div class="home-left-bestskills">
@@ -67,7 +98,14 @@
                 <a href="#"><img src="../assets/img/member-3/pictureTTD.png" alt=""></a>
             </div>
         </div>
-        <div class="resume">
+    
+        <!-- End Home -->
+
+
+
+        <!-- Begin Resume -->
+
+        <div id="resume" class="resume">
             <div class="container">
                 <div class="title-center">
                     <span class="subtitle">7+ YEARS OF EXPERIENCE</span>
@@ -84,7 +122,7 @@
                 <div id="tab1" class="row-education">
                     <div class="education-content">
                         <div class="content-title">
-                            <span class="subtitle">2007-2010</span>
+                            <span class="subtitle">2020-NOW</span>
                             <h4 class="maintitle">Education Quality</h4>
                         </div>
                         <div class="education-quality">
@@ -94,16 +132,15 @@
                                     <div class="branch-circle"></div>
                                     <div class="heading">
                                         <div class="title">
-                                            <h4 class="edu-list-title">Personal Portfolio April Fools</h4>
-                                            <span class="edu-list-time">University of DVI (1997 - 2001)</span>
+                                            <h4 class="edu-list-title">Thuy Loi University</h4>
+                                            <span class="edu-list-time">First Year (2020 - 2021)</span>
                                         </div>
                                         <div class="date-and-time">
-                                            <span>4.30/5</span>
+                                            <span>2.75/4.0</span>
                                         </div>
                                     </div>
                                     <p class="edu-list-content">
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
-                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                        Subjects are studied such as: introductory programming, advanced programming, Python programming, data structures and algorithms, ...
                                     </p>
                                 </div>
                             </div>
@@ -114,16 +151,15 @@
                                     <div class="branch-circle"></div>
                                     <div class="heading">
                                         <div class="title">
-                                            <h4 class="edu-list-title">Personal Portfolio April Fools</h4>
-                                            <span class="edu-list-time">University of DVI (1997 - 2001)</span>
+                                            <h4 class="edu-list-title">Thuy Loi University</h4>
+                                            <span class="edu-list-time">Second Year (2021 - 2022)</span>
                                         </div>
                                         <div class="date-and-time">
-                                            <span>4.30/5</span>
+                                            <span>2.8/4</span>
                                         </div>
                                     </div>
                                     <p class="edu-list-content">
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
-                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                        Subjects are studied such as: Web platform, database, computer network, specialized English
                                     </p>
                                 </div>
                             </div>
@@ -131,7 +167,7 @@
                     </div>
                     <div class="experience-content">
                         <div class="content-title">
-                            <span class="subtitle">2007-2010</span>
+                            <span class="subtitle">2020-NOW</span>
                             <h4 class="maintitle">Job Experience</h4>
                         </div>
                         <div class="job-experience">
@@ -141,21 +177,20 @@
                                     <div class="branch-circle"></div>
                                     <div class="heading">
                                         <div class="title">
-                                            <h4 class="edu-list-title">Personal Portfolio April Fools</h4>
-                                            <span class="edu-list-time">University of DVI (1997 - 2001)</span>
+                                            <h4 class="edu-list-title">Update soon</h4>
+                                            <!-- <span class="edu-list-time">2021-NOW</span> -->
                                         </div>
-                                        <div class="date-and-time">
+                                        <!-- <div class="date-and-time">
                                             <span>4.30/5</span>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <p class="edu-list-content">
-                                        The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales.
-                                        Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                        Currently no experience
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="list">
+                            <!-- <div class="list">
                                 <div class="inner">
                                     <div class="branch"></div>
                                     <div class="branch-circle"></div>
@@ -173,7 +208,7 @@
                                         Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -248,8 +283,134 @@
                 </div>
             </div>
         </div>
-        <div class="pricing">
-            <div class="pricing-left">
+        <!-- End Resume -->
+
+        <!-- Begin Client -->
+        <div id="clients" class="client">
+            <div class="container">
+                <div class="title-text-left title-text-left-client">
+                    <div class="content-title">
+                        <span class="subtitle">POPULAR CLIENTS</span>
+                        <h2 class="title-client">Awesome Clients</h2>
+                    </div>
+                </div>
+                <div class="tab-card-client">
+                    <div class="client-tab">
+                        <ul>
+                            <li class="active nav-client"><a href=""></a>JavaScript</li>
+                            <li class="nav-client"><a href=""></a>Product Design</li>
+                            <li class="nav-client"><a href=""></a>Wordpress</li>
+                            <li class="nav-client"><a href=""></a>HTNL to React</li>
+                            <li class="nav-client"><a href=""></a>React to Lavarel</li>
+                            <li class="nav-client"><a href=""></a>Python</li>
+                        </ul>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="main-content">
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="main-content">
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="main-content">
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail">
+                                <a href=""><img style="width : 140px; height: 90px" src="../assets/img/member-3/brand-01.webp" alt=""></a>
+                                <div class="client-name">
+                                    <span><a href="">John Due</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+
+            </div>
+        </div>
+
+        <!-- End Client -->
+
+
+        <!-- Begin Pricing -->
+        <div id="pricing" class="pricing">
+            <div class="title-text-left">
                 <div class="content-title">
                     <span class="subtitle">PRICING</span>
                     <h2>My Pricing</h2>
@@ -504,14 +665,210 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+
+
+
+</div>
+        <!-- End Pricing -->
+
+        <!-- Begin Blog -->
+
+        <div id="blog" class="blog">
+            <div class="container container-blog">
+                <div class="title-center">
+                    <span class="subtitle">VISIT MY BLOG AND KEEP YOUR FEEDBACK</span>
+                    <h2>My Blog</h2>
+                </div>
+                
+                <div class="list-blog">
+                    <div class="blog-item">
+                        <img style="width: 80%; height: 50%;" src="../assets/img/member-3/blog-big-01.webp" alt="">
+                        <div class="category-infor">
+                            <a href="">CANADA</a>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""><circle cx="12" cy="12" r="10" style=""></circle><polyline points="12 6 12 12 16 14" style=""></polyline></svg> 2 min read</span>
+                        </div>
+                        <div class="title-blog">
+                            <a href="">T-shirt design is the part of design 
+                                <svg style="color: #FF014F;" class="icon-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #FF014F; "><line x1="7" y1="17" x2="17" y2="7" style="color: #FF014F;"></line><polyline points="7 7 17 7 17 17" style="color: #FF014F;"></polyline></svg> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <img style="width: 80%; height: 50%;" src="../assets/img/member-3/blog-big-01.webp" alt="">
+                        <div class="category-infor">
+                            <a href="">CANADA</a>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""><circle cx="12" cy="12" r="10" style=""></circle><polyline points="12 6 12 12 16 14" style=""></polyline></svg> 2 min read</span>
+                        </div>
+                        <div class="title-blog">
+                            <a href="">T-shirt design is the part of design 
+                                <svg style="color: #FF014F;" class="icon-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #FF014F; "><line x1="7" y1="17" x2="17" y2="7" style="color: #FF014F;"></line><polyline points="7 7 17 7 17 17" style="color: #FF014F;"></polyline></svg> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <img style="width: 80%; height: 50%;" src="../assets/img/member-3/blog-big-01.webp" alt="">
+                        <div class="category-infor">
+                            <a href="">CANADA</a>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""><circle cx="12" cy="12" r="10" style=""></circle><polyline points="12 6 12 12 16 14" style=""></polyline></svg> 2 min read</span>
+                        </div>
+                        <div class="title-blog">
+                            <a href="">T-shirt design is the part of design 
+                                <svg style="color: #FF014F;" class="icon-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #FF014F; "><line x1="7" y1="17" x2="17" y2="7" style="color: #FF014F;"></line><polyline points="7 7 17 7 17 17" style="color: #FF014F;"></polyline></svg> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- End Blog -->
+
+        <!-- Begin Blog Page -->
+            <div class="blog-page">
+                <img src="../assets/img/member-3/blog-big-01.webp" alt="">
+                <div class="btn-close-bp"><i class="fa-solid fa-xmark"></i></div>
+                <div class="container-blog-page">
+                    <p>May 2, 2021</p>
+                    <h3>T-shirt design is the part of design</h3>
+                    <p>Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                    <h3>Nobis eleifend option conguenes.</h3>
+                    <p>Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere massa nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a massa nisi. Curabitur sit amet suscipit nisl. Sed eget nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum erat dignissim id.</p>
+                    <p>Ut rhoncus vestibulum facilisis. Duis et lorem vitae ligula cursus venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vitae nisi tortor. Morbi leo nulla, posuere vel lectus a, egestas posuere lacus. Fusce eleifend hendrerit bibendum. Morbi nec efficitur ex.</p>
+                    <h3>Mauris tempor, orci id pellentesque.</h3>
+                    <p>Nulla non ligula vel nisi blandit egestas vel eget leo. Praesent fringilla dapibus dignissim. Pellentesque quis quam enim. Vestibulum ultrices, leo id suscipit efficitur, odio lorem rhoncus dolor, a facilisis neque mi ut ex. Quisque tempor urna a nisi pretium, a pretium massa tristique. Nullam in aliquam diam. Maecenas at nibh gravida, ornare eros non, commodo ligula. Sed efficitur sollicitudin auctor. Quisque nec imperdiet purus, in ornare odio. Quisque odio felis, vestibulum et.</p>
+                </div>
+            </div>
+            <div class="background">
+                
+            </div>
+
+        <!-- End Blog Page -->
+
+        <!-- Begin Contact -->
+    <div id="contact" class="contact">
         <div class="title-center">
             <span class="subtitle">CONTACT</span>
             <h2 class="maintitle">Contact With Me</h2>
         </div>
-
+        <div class="contact-area">
+            <img src="../assets/img/member-3/contact1.webp" alt="">
+            <div class="title-area">
+                <h4>Nevine Acotanza</h4>
+                <span>Chief Operating Officer</span>
+            </div>
+            <div class="description">
+                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                <span class="phone">Phone: <a href="">0866617623</a></span>
+                <span class="mail">Email: <a href="">tod25504@gmail.com</a></span>
+            </div>
+            <div class="social-area">
+                <div class="home-left-findme">
+                    <div class="find">FIND WITH ME</div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100007764138878"><button><i class="fa-brands fa-facebook-f"></i></button></a></li>
+                        <li><a href="https://www.instagram.com/dzuongkookie.21/"><button><i class="fa-brands fa-instagram"></i></button></a></li>
+                        <li><a href="https://github.com/ToTungDuong"><button><i class="fa-brands fa-github"></i></button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="container">
+                <div class="form-name-phone">
+                    <div class="form-name">
+                        <div class="form-group">
+                            <label for="contact_name">YOUR NAME</label>
+                            <input name="Name" id="contact_name" class="form-control textField" type="text">
+                            <span class="error error_name"></span>
+                        </div>
+                    </div>
+                    <div class="form-phone">
+                        <div class="form-group">
+                            <label for="contact_phone">PHONE NUMBER</label>
+                            <input name="Phone" id="contact_phone" class="form-control textField" type="text">
+                            <span class="error error_phone"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-email">
+                    <div class="form-group">
+                        <label for="contact_email">EMAIL</label>
+                        <input name="Email" id="contact_email" class="form-control1 textField" type="email">
+                        <span class="error error_email"></span>
+                    </div>
+                </div>
+                <div class="form-subject">
+                    <div class="form-group">
+                        <label for="contact_subject">SUBJECT</label>
+                        <input name="Subject" id="contact_subject" class="form-control1 textField" type="text">
+                        <span class="error error_subject"></span>
+                    </div>
+                </div>
+                <div class="form-message">
+                    <div class="form-group">
+                        <label for="contact_message">YOUR MESSAGE</label>
+                        <textarea name="Message" id="contact_message" class="textField" cols="30" rows="10"></textarea>
+                        <span class="error error_message"></span>
+                    </div>
+                </div>
+                <button id="contact_submit" class="btn-send" type="submit">
+                        <span>SEND MESSAGE</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                </button>            
+            </div>
+        </div>
     </div>
-</div>
+
+
+
+    <!-- End Contact -->
+
+    <!-- Begin Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="btn-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a href="../assets/img/member-3/avtTTD.jpg">
+                        <img src="../assets/img/member-3/avtTTD.jpg" alt="">
+                    </a>
+                </div>
+                <p>Welcome to My CV. Thanks you for watching</p>
+            </div>
+            <div class="menu-nav">
+                <ul class="nav-inner">
+                    <li><a href="" class="menu-item">Home</a></li>
+                    <li><a href="" class="menu-item">Resume</a></li>
+                    <li><a href="" class="menu-item">Clients</a></li>
+                    <li><a href="" class="menu-item">Pricing</a></li>
+                    <li><a href="" class="menu-item">Blog</a></li>
+                    <li><a href="" class="menu-item">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="model"></div>
+
+    <!-- End Mobile Menu -->
+    <div class="btn-up">
+        <a href=""><button><i class="fa-solid fa-arrow-up"></i></button></a>
+    </div>
+    <div class="btn-home">
+        <a href="../index.html"><button><i class="fa-solid fa-house"></i></button></a>
+    </div>
+
+    <!-- Begin Footer -->
+    <div class="footer">
+        <a href=""><div class="logo"><img src="../assets/img/member-3/avtTTD.jpg" alt=""></div></a>
+        <p><span>© 2022.All rights reserved by <a href="">Rainbow-Themes.</a></span></p>
+    </div>
+
+    <!-- End Footer -->
         <script src="../assets/js/member-3/main.js"></script>
 </body>
 </html>
