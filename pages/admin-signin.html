@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/admin-signup.css">
+    <link rel="stylesheet" href="../assets/css/admin-signin.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
@@ -14,10 +14,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Sign Up</title>
+    <title>Sign In</title>
 </head>
 <body>
-    <div id="main" >
+    <div id="wrapper" >
         <div class="home-btn">
             <a href="../index.html">
                 <i class="fa-solid fa-angle-left"></i>
@@ -25,36 +25,31 @@
                 Home Page
             </a>
         </div>
-        <div class="form-signup">
-            <h1 class="form-heading">Sign Up</h1>
+        <div id="form-login">
+            <h1 class="form-heading">Sign In</h1>
             <div class="form-group">
+                <i class="far fa-user"></i>
                 <input type="text" class="form-input"  placeholder="Your Name" id="userName">
+
             </div>
             <div class="form-group">
-                <input type="email" class="form-input"  placeholder="Email Address" id="email">
-            </div>
-            <div class="form-group">
+                <i class="fas fa-key"></i>
                 <input type="password" class="form-input"  placeholder="Password" id="passWord">
-                <div class="eye">
-                    <i class="far fa-eye"></i>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-input"  placeholder="Confirm Password" id="passWord">
-                <div class="eye">
+                <div id="eye">
                     <i class="far fa-eye"></i>
                 </div>
             </div>
             <span class="form-message" id="not_found_account"></span>
             <span class="form-message" id="text_when_empty"></span>
-            <a class="submit-btn" href="#"><button class="form-submit">Sign Up</button></a>
-            <div class="signin">
-                <span>Already had an account?</span>
-                <a href="./admin-signin.html">Sign In</a>
+            <a class="submit-btn" href="#"><button class="form-submit"   onclick="handleSubmit()">Sign In</button></a>
+            <div class="signup">
+                <span>Haven't had an account?</span>
+                <a href="./admin-signup.html">Sign Up</a>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="../assets/js/pages/admin-signin.js"></script>
+    <script src="../assets/js/pages/admin-signup.js"></script>
 </body>
+
 </html>
