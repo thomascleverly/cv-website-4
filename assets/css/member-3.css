@@ -1220,8 +1220,22 @@ textarea{
 }
 
 .btn-up>a>button{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    list-style-type: none;
+    border-radius: 30px;
+    border: none;
+    background: #ecf0f3;
+    box-shadow: 5px 5px 15px #d1d9e6,-5px -5px 15px #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    bottom: 120px;
+    position: fixed;
+}
+.btn-home>a>button{
+    width: 60px;
+    height: 60px;
     list-style-type: none;
     border-radius: 30px;
     border: none;
@@ -1233,23 +1247,12 @@ textarea{
     bottom: 40px;
     position: fixed;
 }
-.btn-home>a>button{
-    width: 50px;
-    height: 50px;
-    list-style-type: none;
-    border-radius: 30px;
-    border: none;
-    background: #ecf0f3;
-    box-shadow: 5px 5px 15px #d1d9e6,-5px -5px 15px #fff;
-    cursor: pointer;
-    position: absolute;
-    right: 40px;
-    bottom: 100px;
-    position: fixed;
-
-}
-.fa-arrow-up, .fa-house{
+.fa-arrow-up{
     font-size: 20px;
+    color: #ff014f;
+  }
+.fa-house{
+    font-size: 25px;
     color: #ff014f;
 }
 .btn-up>a>button:hover ,.btn-home>a>button:hover{

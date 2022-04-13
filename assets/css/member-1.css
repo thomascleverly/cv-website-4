@@ -139,6 +139,7 @@ html {
     right: 3%;
     border-radius: 50%;
     z-index: 2;
+    display: none;
 }
 
 .up-icon a{
