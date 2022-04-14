@@ -5,6 +5,7 @@
 }
 #main{
     min-height: 100vh;
+    background-color: #ecf0f3;
     position: relative;
     display: flex;
     justify-content: center;
